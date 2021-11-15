@@ -130,11 +130,17 @@ int main()
 	float result;
 	int choice, num,ch;
 	hi();
+    while (1)
+    {
+        /* code */
+    
+    
 	printf("Press 1 For Array\n");
     printf("Press 2 For Linked List\n");
     printf("Press 3 For Stacks\n");
     printf("Press 4 For Searching\n");
     printf("Press 5 For Others\n");
+    printf("Press 6 To Exit\n");
     printf("Enter your choice:\n");
     ch = input();
     
@@ -635,13 +641,20 @@ break;
         }
     }
 
+    case 6:
+    {   
+        // printf("------> Thanks For Using <-------")
+        exit(1);
+        break;
+    }
+
     default:
 		printf("wrong Input\n");
 }
-	return 0;
+	
 		
-
-
+    }
+return 0;
 
 } // Change Menu-Driven
 
