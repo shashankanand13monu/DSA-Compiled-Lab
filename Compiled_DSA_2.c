@@ -130,6 +130,8 @@ int main()
 	float result;
 	int choice, num,ch;
 	hi();
+
+    menu:
     while (1)
     {
         /* code */
@@ -146,6 +148,10 @@ int main()
     
 	switch (ch) {
 	    case 1: {
+            while(1)
+            {
+
+            
 	printf("Press 1 to find out the smallest and largest element stored in an array of n integers.\n");
 	printf("Press 2 to reverse the contents of an array of n elements.\n");
 	printf("Press 3 to search an element in an array of n numbers.\n");
@@ -154,6 +160,8 @@ int main()
 	printf("Press 6 to find and display the number of elements between two elements a and b (both inclusive).\n");
 	printf("Press 7 to find out the kth smallest and kth largest element stored in a dynamic array of n integers \n");
 	printf("Press 8 to find out the smallest and largest element stored in an array of n integers.\n");
+    printf("Press 9 to Back to Menu:\n");
+    printf("Press 10 to Exit The Program \n");
     printf("Enter your choice:\n");
 	choice = input();
 	
@@ -410,9 +418,22 @@ printf("\nThe smallest element is %d\n",s);
 printf("\nThe largest element is %d\n",l);
         break;
     }
-	default:
+	
+    case 9:
+    {   goto menu;
+        break;
+    }
+    case 10 :
+    {   printf("------> Thanks For Using <-------");
+        exit(1);
+        break;
+    }
+
+    default:
 		printf("wrong Input\n");
 	}
+
+            }
 	return 0;
 
 break;
@@ -429,10 +450,17 @@ break;
     case 3:
     {
     
+    while (1)
+    {
+       
+    
+    
     printf("Press 1 to Create Stack Using  Array \n");
     printf("Press 2 to Create Stack Using Linked List\n");
     printf("Press 3 to reverse a stack\n");
     printf("Press 4 to Converst Infinix Expression to Postfix Expression\n");
+    printf("Press 5 to go back to Main Menu\n");
+    printf("Press 6 to Exit\n");
     printf("Enter your choice:\n");
     choice = input();
     switch(choice)
@@ -461,18 +489,40 @@ break;
             intopo();
             break;
         }
+        case 5:
+        {   
+             printf("------> Backed To Menu <-------\n\n");
+            goto menu;
+            break;
+        }
+         case 6:
+    {   
+        printf("------> Thanks For Using <-------\n");
+        exit(1);
+        break;
+    }
+    default:
+		printf("******* Wrong Input *******\n ******* TRY AGAIN ********\n\n");
 
     }
+    }
     break;
+    
     }
 
     case 4:
     {
+        while(1)
+        {
+
+        
     printf("Press 1  to find whether hunt element is present in container or not. If present, then triple the value of hunt and search again. Repeat these steps until hunt is not found. Finally return the value of hunt.\n");
     printf("Press 2  to do Linear Search \n");
     printf("Press 3  to do Binary Search\n");
     printf("Press 4  to do Linear Search Recursively\n");
     printf("Press 5  to find the number in array that appears more than or equal to n/2 times.\n");
+    printf("Press 6  to go Back To MAin Menu\n");
+    printf("Press 7  to Exit\n");
 
     choice = input();
 	switch (choice) 
@@ -594,22 +644,39 @@ break;
         break;
     }
 
+    case 6:
+        {   
+             printf("------> Backed To Menu <-------\n\n");
+            goto menu;
+            break;
+        }
+         case 7:
+    {   
+        printf("------> Thanks For Using <-------\n");
+        exit(1);
+        break;
+    }
+
     default:
 		printf("wrong - Input\n");
 	}
 	return 0;
 
+        }
     break;
     }
     
     case 5:
-    {
+    {   
+        while(1){
         printf("Press 1 to store n employee's data such as employee name," 
         "gender,designation, department, basic pay. Calculate the gross pay of each employees \n");
         printf("Press 2 to add two distances (in km-meter) by passing structure to a function\n");
         printf("Press 3 to perform the following operations in a single linked list by using suitable user defined functions for each case.\n");
         printf(" --> a)Create a list and display the list.\n") ;
         printf(" -->b) Check if the list is empty.\n");
+        printf("Press 4 to go back to Main Menu\n");
+        printf("Press 5 to Exit\n");
         printf("Enter Choice : \n");
 
 
@@ -635,15 +702,29 @@ break;
                list();
                break;
            }
+            case 4:
+        {   
+             printf("------> Backed To Menu <-------\n\n");
+            goto menu;
+            break;
+        }
+         case 5:
+    {   
+        printf("------> Thanks For Using <-------\n");
+        exit(1);
+        break;
+    }
            default :
            printf("wrong Input\n");
 
         }
+        }
+        break;
     }
 
     case 6:
     {   
-        // printf("------> Thanks For Using <-------")
+        printf("------> Thanks For Using <-------");
         exit(1);
         break;
     }
