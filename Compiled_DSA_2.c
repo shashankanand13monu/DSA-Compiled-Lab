@@ -136,14 +136,14 @@ int main()
     {
         /* code */
     
-    
-	printf("Press 1 For Array\n");
-    printf("Press 2 For Linked List\n");
-    printf("Press 3 For Stacks\n");
-    printf("Press 4 For Searching\n");
-    printf("Press 5 For Others\n");
-    printf("Press 6 To Exit\n");
-    printf("Enter your choice:\n");
+    printf("\t\t\t******* ------> MAIN MENU <------- *******\n\n");
+	printf("\tPress 1 For Array\n");
+    printf("\tPress 2 For Linked List\n");
+    printf("\tPress 3 For Stacks\n");
+    printf("\tPress 4 For Searching\n");
+    printf("\tPress 5 For Others\n");
+    printf("\tPress 6 To Exit\n");
+    printf("\tEnter your choice:\n");
     ch = input();
     
 	switch (ch) {
